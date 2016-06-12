@@ -156,6 +156,7 @@
     <ClCompile Include="boilerplate.c" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\README.md" />
     <None Include="bink2w32.def" />
   </ItemGroup>
   <ItemGroup>

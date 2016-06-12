@@ -173,10 +173,9 @@ int32_t __stdcall BinkCopyToBuffer_wrapper(BINK* bnk, void* dest,
     uint8_t* background =
         frame + subpict->dst_x * 4 + subpict->dst_y * destpitch;
 
-    // TODO: figure out if this is the correct order
-    const uint8_t Bf = (subpict->color >> 24) & 0xff;
+    const uint8_t Rf = (subpict->color >> 24) & 0xff;
     const uint8_t Gf = (subpict->color >> 16) & 0xff;
-    const uint8_t Rf = (subpict->color >> 8) & 0xff;
+    const uint8_t Bf = (subpict->color >> 8) & 0xff;
     const uint8_t Af = 255 - (subpict->color & 0xff);
 
     // no, this shouldn't be subpict->stride, subpict->stride is for 1bpp

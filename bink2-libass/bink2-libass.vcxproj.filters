@@ -26,6 +26,7 @@
     <None Include="bink2w32.def">
       <Filter>Source Files</Filter>
     </None>
+    <None Include="..\README.md" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="boilerplate.h">
